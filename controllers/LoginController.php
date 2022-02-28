@@ -31,30 +31,39 @@ class LoginController{
         ]);
     }
 
-    public static function forgot(){
-        echo "Desde pagina para resetear password";
+    public static function forgot(Router $router){
+        $router->render('auth/forgot',[
+            'titulo' => 'Recuperar Contraseña'
+        ]);
 
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
         }
     }
 
-    public static function restablecer(){
-        echo "Desde restablecer";
+    public static function restablecer(Router $router){
+        $router->render('auth/restablecer',[
+            'titulo' => 'Restablecer Contraseña'
+        ]);
+
 
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
         }
     }
 
-    public static function mensaje(){
-        echo "Desde mensaje";
+    public static function mensaje(Router $router){
+        $router->render('auth/mensaje',[
+            'titulo' => 'Cuenta Creada Exitosamente'
+        ]);
 
         
     }
 
-    public static function confirmar(){
-        echo "Desde confirmar";
+    public static function confirmar(Router $router){
+        $router->render('auth/confirmar',[
+            'titulo' => 'Confirma tu Cuenta UpTask'
+        ]);     
 
         
     }

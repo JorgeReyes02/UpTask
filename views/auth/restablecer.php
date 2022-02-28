@@ -1,19 +1,11 @@
-<div class="contenedor login">
+<div class="contenedor restablecer">
 <?php include_once __DIR__ . "/../templates/nombre-sitio.php" ;?> 
 
     <div class="contenedor-sm">
-        <p class="descripcion-pagina">Iniciar Sesión</p>
+        <p class="descripcion-pagina">Coloca Tu nueva Contraseña</p>
 
         <form action="/" method="POST" class="formulario">
-            <div class="campo">
-                <label for="email">Email</label>
-                <input type="email"
-                       id="email"
-                       placeholder="Tu Email"
-                       name="email"
-                />
-            </div>
-
+        
             <div class="campo">
                 <label for="contrasena">Contraseña</label>
                 <input type="password"
